@@ -12,6 +12,7 @@ import error998.tutor.init.ModBlocks;
 import error998.tutor.init.ModCrafting;
 import error998.tutor.init.ModItems;
 import error998.tutor.init.ModTileEntities;
+import error998.tutor.network.PacketHandler;
 import error998.tutor.proxy.CommonProxy;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.ACCEPTED_VERSION)
@@ -36,6 +37,8 @@ public class Tutor
 		
 		ModBlocks.init();
 		ModBlocks.register();
+		
+		PacketHandler.init();
 	}
 	
 	

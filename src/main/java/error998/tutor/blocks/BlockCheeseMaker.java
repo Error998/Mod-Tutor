@@ -27,11 +27,14 @@ import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.common.network.NetworkRegistry.TargetPoint;
 import error998.tutor.Tutor;
 import error998.tutor.tileenity.TileEntityCheeseMaker;
 import error998.tutor.tileenity.TileEntityJar;
 import error998.tutor.Reference.TutorBlocks;
 import error998.tutor.init.ModItems;
+import error998.tutor.network.PacketHandler;
+import error998.tutor.network.message.MessageFillCheeseMaker;
 
 
 public class BlockCheeseMaker extends Block implements ITileEntityProvider {
@@ -100,7 +103,14 @@ public class BlockCheeseMaker extends Block implements ITileEntityProvider {
 	
 	@Override
 	public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack) {
-		worldIn.setBlockState(pos, state.withProperty(FACING, placer.getHorizontalFacing().getOpposite()), 2);
+		worldIn.setBlockState(pos, state.withProperty(FACING, placer.getHorizontalFacing().getOpposite()).withProperty(MILK_LEVEL, state.getValue(MILK_LEVEL)), 2);
+	}
+	
+	
+	@Override
+	public IBlockState onBlockPlaced(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer) {
+			IBlockState state = super.onBlockPlaced(worldIn, pos, facing, hitX, hitY, hitZ, meta, placer);
+			return state.withProperty(MILK_LEVEL, Integer.valueOf(0));
 	}
 	
 	
@@ -179,10 +189,12 @@ public class BlockCheeseMaker extends Block implements ITileEntityProvider {
 			else
 			{
 				// Hand is empty
+				if(side == side.UP){
+					System.out.println("do work");
+					cheesemaker.doWork();
+				}
 			}
-			System.out.println("Update BlockState fuckers: " + cheesemaker.getMilkLevel());
-			worldIn.setBlockState(pos, state.withProperty(FACING, state.getValue(FACING)).withProperty(MILK_LEVEL, cheesemaker.getMilkLevel()), 2);
-			//worldIn.setBlockState(pos, state.withProperty(FACING, side).withProperty(MILK_LEVEL, cheesemaker.getMilkLevel()));
+			PacketHandler.INSTANCE.sendToAllAround(new MessageFillCheeseMaker(cheesemaker.getMilkLevel(), pos.getX(), pos.getY(), pos.getZ()), new TargetPoint(playerIn.dimension, pos.getX(), pos.getY(), pos.getZ(), 128D));
 			worldIn.markBlockRangeForRenderUpdate(pos, pos);
 			
 		}		
