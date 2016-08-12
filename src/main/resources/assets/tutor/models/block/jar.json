@@ -1,0 +1,83 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+	"parent": "block/block",
+	"textures": {
+        "particle": "blocks/glass",
+        "0": "blocks/glass_blue",
+        "1": "blocks/glass_white",
+        "2": "blocks/log_oak"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 225, 0 ],
+            "translation": [ 0, 2, 0],
+            "scale":[ 0.9, 0.9, 0.9 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0],
+            "scale":[ 0.75, 0.75, 0.75 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 1, 0],
+            "scale":[ 0.6, 0.6, 0.6 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 45, 0 ],
+            "translation": [ 0, 2.5, 0],
+            "scale": [ 0.6, 0.6, 0.6 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.6, 0.6, 0.6 ]
+        },
+        "firstperson_lefthand": {
+            "rotation": [ 0, 225, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.6, 0.6, 0.6 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Base",
+            "from": [ 4.0, 0.0, 4.0 ], 
+            "to": [ 12.0, 1.0, 12.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 1.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 1.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 1.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 1.0 ] },
+                "up": { "texture": "#0", "uv": [ 4.0, 4.0, 12.0, 12.0 ] },
+                "down": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 8.0 ] }
+            }
+        },
+        {
+            "name": "Jar",
+            "from": [ 4.0, 1.0, 4.0 ], 
+            "to": [ 12.0, 11.0, 12.0 ], 
+            "faces": {
+                "north": { "texture": "#1", "uv": [ 1.0, 5.0, 9.0, 15.0 ] },
+                "east": { "texture": "#1", "uv": [ 1.0, 3.0, 9.0, 13.0 ] },
+                "south": { "texture": "#1", "uv": [ 1.0, 2.0, 9.0, 12.0 ] },
+                "west": { "texture": "#1", "uv": [ 1.0, 1.0, 9.0, 11.0 ] },
+                "up": { "texture": "#1", "uv": [ 0.0, 0.0, 8.0, 8.0 ] },
+                "down": { "texture": "#1", "uv": [ 0.0, 0.0, 8.0, 8.0 ] }
+            }
+        },
+        {
+            "name": "Lid",
+            "from": [ 5.0, 11.0, 5.0 ], 
+            "to": [ 11.0, 12.0, 11.0 ], 
+            "faces": {
+                "north": { "texture": "#2", "uv": [ 0.0, 0.0, 6.0, 1.0 ] },
+                "east": { "texture": "#2", "uv": [ 0.0, 0.0, 6.0, 1.0 ] },
+                "south": { "texture": "#2", "uv": [ 0.0, 0.0, 6.0, 1.0 ] },
+                "west": { "texture": "#2", "uv": [ 0.0, 0.0, 6.0, 1.0 ] },
+                "up": { "texture": "#2", "uv": [ 0.0, 0.0, 6.0, 6.0 ] },
+                "down": { "texture": "#2", "uv": [ 0.0, 0.0, 6.0, 6.0 ] }
+            }
+        }
+    ]
+}

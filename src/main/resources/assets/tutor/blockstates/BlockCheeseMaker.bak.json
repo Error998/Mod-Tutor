@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": {"model": "tutor:cheesemaker_0", "y": 270},
+        "facing=east": {"model": "tutor:cheesemaker_1"},
+        "facing=south": {"model": "tutor:cheesemaker_2", "y": 90},
+        "facing=west": {"model": "tutor:cheesemaker_3", "y": 180}
+    }
+}

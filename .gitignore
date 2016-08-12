@@ -5,43 +5,30 @@ ehthumbs.db
 # Folder config file
 Desktop.ini
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
 # Windows shortcuts
 *.lnk
 
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+.classpath
+.gitattributes
+.gitignore
+.gradle
+.project
+.settings
+bin
+build
+build.gradle
+CREDITS-fml.txt
+eclipse
+Forge
+forge-1.10.2-12.18.1.2011-changelog.txt
+gradle
+gradlew
+gradlew.bat
+LICENSE-new.txt
+MinecraftForge-Credits.txt
+Modding_Client.launch
+Modding_Server.launch
+Paulscode IBXM Library License.txt
+Paulscode SoundSystem CodecIBXM License.txt
+README.txt
+run

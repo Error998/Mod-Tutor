@@ -1,0 +1,10 @@
+item.cheese.name=Cheese
+item.cracker.name=Cracker
+item.cheese_cracker.name=Cheese Cracker
+item.tomato_sauce.name=Tomato Sauce
+
+tile.cheese.name=Cheese Block
+tile.jar.name=Cracker Jar
+tile.cheesemaker.name=Cheese Maker
+
+itemGroup.creativeTab=Tutor Mod

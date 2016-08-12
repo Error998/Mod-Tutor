@@ -1,0 +1,16 @@
+[
+{
+  "modid": "tutor",
+  "name": "Error's Tutor Mod",
+  "description": "My first mod",
+  "version": "1.0.0",
+  "mcversion": "${mcversion}",
+  "url": "Http://www.saminecraft.co.za",
+  "updateUrl": "",
+  "authorList": ["Error_998"],
+  "credits": "MrCrayfish for his nice tutor series",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
