@@ -64,7 +64,7 @@ Open the '(x)= Arguments' tab
 ```
 Change the Working directory to were you extracted the project and open the run folder. 
 ```
-
+![Run configuration setup](media/run_configurations.png)
 ### MrCrayfish's video tutorial
 
 If you are having any issues with the above instructions cheeck out MrCrayfish's excellent mod tutorial on how to setup your workspace
