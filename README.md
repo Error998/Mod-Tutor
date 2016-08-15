@@ -76,6 +76,7 @@ alt="Eclipse forge setup" width="240" height="180" border="10" /></a>
 ### Alternative IntelliJ setup
 
 If you would rather prefer to use IntelliJ follow CPW's video tutorial
+
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=PfmlNiHonV0
 " target="_blank"><img src="http://img.youtube.com/vi/PfmlNiHonV0/0.jpg" 
 alt="IntelliJ forge setup" width="240" height="180" border="10" /></a>
