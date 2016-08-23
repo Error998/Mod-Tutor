@@ -40,6 +40,7 @@ public class Reference
 	
 	// Declare all blocks here
 	public static enum TutorBlocks {
+		BASIC_BLOCK("basicblock", "BlockBasic"),
 		CHEESE("cheese", "BlockCheese"),
 		JAR("jar", "BlockJar"),
 		CHEESE_MAKER("cheesemaker","BlockCheeseMaker");

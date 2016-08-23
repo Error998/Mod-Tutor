@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "down": "tutor:blocks/basic_face_down",
+        "up": "tutor:blocks/basic_face_up",
+        "north": "tutor:blocks/basic_face_north",
+        "east": "tutor:blocks/basic_face_east",
+        "south": "tutor:blocks/basic_face_south",
+        "west": "tutor:blocks/basic_face_west",
+        "particle": "blocks/lapis_block"
+    }
+}
