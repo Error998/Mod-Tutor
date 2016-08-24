@@ -4,15 +4,18 @@ import error998.tutor.init.ModItems;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
-public class TutorTab extends CreativeTabs{
+public class TutorTab extends CreativeTabs
+{
 
-	public TutorTab() {
+	public TutorTab()
+	{
 		super("creativeTab");
 	}
 
+	
 	@Override
-	public Item getTabIconItem() {
+	public Item getTabIconItem()
+	{
 		return ModItems.cheese;
 	}
-
 }

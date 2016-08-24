@@ -45,7 +45,7 @@ public class Tutor
 	@EventHandler
 	public void init(FMLInitializationEvent event)
 	{
-		// Init client side renders
+		// Initialize client side renders
 		proxy.init();
 		
 		// Register all crafting recipes

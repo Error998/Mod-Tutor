@@ -5,9 +5,11 @@ import net.minecraft.item.ItemFood;
 import error998.tutor.Reference;
 import error998.tutor.Tutor;
 
-public class ItemCheeseCracker extends ItemFood {
+public class ItemCheeseCracker extends ItemFood
+{
 
-	public ItemCheeseCracker() {
+	public ItemCheeseCracker()
+	{
 		// Hunger bar, saturation, isWolfFood
 		super(3, 0.5f, true);
 		

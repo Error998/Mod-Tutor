@@ -5,9 +5,11 @@ import net.minecraft.item.ItemFood;
 import error998.tutor.Reference;
 import error998.tutor.Tutor;
 
-public class ItemCheese extends ItemFood {
+public class ItemCheese extends ItemFood
+{
 
-	public ItemCheese() {
+	public ItemCheese()
+	{
 		// (Hunger fill out of 20, isWolfFood)
 		super(2, false);
 		

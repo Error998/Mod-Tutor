@@ -8,9 +8,11 @@ import net.minecraft.creativetab.CreativeTabs;
 import error998.tutor.Reference.TutorBlocks;
 import error998.tutor.Tutor;
 
-public class BlockCheese extends Block {
+public class BlockCheese extends Block
+{
 
-	public BlockCheese() {
+	public BlockCheese()
+	{
 		super(Material.CAKE);
 		
 		setUnlocalizedName(TutorBlocks.CHEESE.getUnlocalizedName());

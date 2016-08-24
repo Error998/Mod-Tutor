@@ -5,9 +5,11 @@ import net.minecraft.item.ItemFood;
 import error998.tutor.Reference;
 import error998.tutor.Tutor;
 
-public class ItemCracker extends ItemFood {
+public class ItemCracker extends ItemFood
+{
 
-	public ItemCracker() {
+	public ItemCracker()
+	{
 		super(1,false);
 		
 		setUnlocalizedName(Reference.TutorItems.CRACKER.getUnlocalizedName());

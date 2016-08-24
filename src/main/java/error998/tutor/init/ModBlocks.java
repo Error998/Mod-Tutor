@@ -12,14 +12,16 @@ import net.minecraft.item.ItemBlock;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class ModBlocks {
+public class ModBlocks
+{
 	public static Block cheese;
 	public static Block jar;
 	public static Block cheesemaker;
 	public static Block basicblock;
 	
 	
-	public static void init() {
+	public static void init()
+	{
 		cheese = new BlockCheese();
 		jar = new BlockJar();
 		cheesemaker = new BlockCheeseMaker();
@@ -27,14 +29,17 @@ public class ModBlocks {
 	}
 	
 	
-	public static void register() {
+	public static void register()
+	{
 		registerBlock(cheese);
 		registerBlock(jar);
 		registerBlock(cheesemaker);
 		registerBlock(basicblock);
 	}
 	
-	private static void registerBlock(Block block) {
+	
+	private static void registerBlock(Block block)
+	{
 		// Register Block
 		GameRegistry.register(block);
 		
@@ -46,7 +51,8 @@ public class ModBlocks {
 	}
 	
 	
-	public static void registerRenders() {
+	public static void registerRenders()
+	{
 		registerRender(cheese);
 		registerRender(jar);
 		registerRender(cheesemaker);
@@ -54,7 +60,8 @@ public class ModBlocks {
 	}
 	
 	
-	private static void registerRender(Block block) {
+	private static void registerRender(Block block)
+	{
 		ModelResourceLocation location = new ModelResourceLocation(block.getRegistryName(), "inventory");
 		final int DEFAULT_ITEM_SUBTYPE = 0;
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), DEFAULT_ITEM_SUBTYPE, location);		

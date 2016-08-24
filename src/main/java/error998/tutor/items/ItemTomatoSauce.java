@@ -5,9 +5,11 @@ import net.minecraft.item.ItemFood;
 import error998.tutor.Reference;
 import error998.tutor.Tutor;
 
-public class ItemTomatoSauce extends Item {
+public class ItemTomatoSauce extends Item
+{
 
-	public ItemTomatoSauce() {
+	public ItemTomatoSauce()
+	{
 		setUnlocalizedName(Reference.TutorItems.TOMATOSAUCE.getUnlocalizedName());
 		setRegistryName(Reference.TutorItems.TOMATOSAUCE.getRegistryName());
 		

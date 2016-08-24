@@ -7,14 +7,18 @@ import net.minecraft.entity.player.EntityPlayer;
 
 public class ClientProxy implements CommonProxy  
 {
+	
 	@Override
-	public void init() {
+	public void init()
+	{
 		ModItems.registerRenders();
 		ModBlocks.registerRenders();
 	}
 	
+	
 	@Override
-	public EntityPlayer getEntityPlayer(){
+	public EntityPlayer getEntityPlayer()
+	{
 		return Minecraft.getMinecraft().thePlayer;
 	}
 }

@@ -9,9 +9,11 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumBlockRenderType;
 
-public class BlockBasic extends Block {
+public class BlockBasic extends Block
+{
 
-	public BlockBasic() {
+	public BlockBasic()
+	{
 		super(Material.ROCK);							// Block is based on the stone block
 		
 		this.setRegistryName(Reference.TutorBlocks.BASIC_BLOCK.getRegistryName());						// Unique internal name of the block
@@ -27,13 +29,15 @@ public class BlockBasic extends Block {
 
 	
 	@Override
-	public BlockRenderLayer getBlockLayer() {			// http://greyminecraftcoder.blogspot.co.za/2014/12/block-rendering-18.html
+	public BlockRenderLayer getBlockLayer()
+	{													// http://greyminecraftcoder.blogspot.co.za/2014/12/block-rendering-18.html
 		return BlockRenderLayer.SOLID;					// SOLID, CUTOUT, CUTOUT_MIPPED or TRANSLUCENT
 	}
 	
 	
 	@Override
-	public EnumBlockRenderType getRenderType(IBlockState state) {
+	public EnumBlockRenderType getRenderType(IBlockState state)
+	{
 		return EnumBlockRenderType.MODEL;				// ENTITYBLOCK_ANIMATED, INVISIBLE, LIQUID or MODEL
 	}
 }
