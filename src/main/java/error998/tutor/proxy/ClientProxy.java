@@ -2,8 +2,11 @@ package error998.tutor.proxy;
 
 import error998.tutor.init.ModBlocks;
 import error998.tutor.init.ModItems;
+import error998.tutor.tileenity.TileEntityJar;
+import error998.tutor.tileenity.render.RendererJar;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraftforge.fml.client.registry.ClientRegistry;
 
 public class ClientProxy implements CommonProxy  
 {
@@ -13,6 +16,9 @@ public class ClientProxy implements CommonProxy
 	{
 		ModItems.registerRenders();
 		ModBlocks.registerRenders();
+		
+		// Tile Entity Special Renderer Registration
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityJar.class, new RendererJar());
 	}
 	
 	

@@ -39,8 +39,8 @@ public class BlockJar extends Block  implements ITileEntityProvider
 		
 		setUnlocalizedName(TutorBlocks.JAR.getUnlocalizedName());
 		setRegistryName(TutorBlocks.JAR.getRegistryName());
-		setCreativeTab(Tutor.CREATIVE_TAB);
 		
+		setCreativeTab(Tutor.CREATIVE_TAB);
 		setHardness(0.25f);		
 	}
 	
@@ -104,7 +104,7 @@ public class BlockJar extends Block  implements ITileEntityProvider
 				if(heldItem != null)
 				{
 					// Check if the item in hand is a cracker
-					if(heldItem.getItem() == ModItems.cracker)
+					if(heldItem.getItem() == ModItems.cheese_cracker)
 					{
 						// If we successfully added a cracker remove 1 from heldItem
 						if(jar.addCracker())
