@@ -4,6 +4,7 @@ import error998.tutor.blocks.BlockBasic;
 import error998.tutor.blocks.BlockCheese;
 import error998.tutor.blocks.BlockCheeseMaker;
 import error998.tutor.blocks.BlockJar;
+import error998.tutor.blocks.BlockModel;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -18,6 +19,7 @@ public class ModBlocks
 	public static Block jar;
 	public static Block cheesemaker;
 	public static Block basicblock;
+	public static Block basicmodel;
 	
 	
 	public static void init()
@@ -26,6 +28,7 @@ public class ModBlocks
 		jar = new BlockJar();
 		cheesemaker = new BlockCheeseMaker();
 		basicblock = new BlockBasic();
+		basicmodel = new BlockModel();
 	}
 	
 	
@@ -35,6 +38,7 @@ public class ModBlocks
 		registerBlock(jar);
 		registerBlock(cheesemaker);
 		registerBlock(basicblock);
+		registerBlock(basicmodel);
 	}
 	
 	
@@ -57,6 +61,7 @@ public class ModBlocks
 		registerRender(jar);
 		registerRender(cheesemaker);
 		registerRender(basicblock);
+		registerRender(basicmodel);
 	}
 	
 	

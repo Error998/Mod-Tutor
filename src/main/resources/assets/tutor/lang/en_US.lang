@@ -3,6 +3,7 @@ item.cracker.name=Cracker
 item.cheese_cracker.name=Cheese Cracker
 item.tomato_sauce.name=Tomato Sauce
 
+tile.basicmodel.name=Basic Block Model 
 tile.basicblock.name=Basic Block
 tile.cheese.name=Cheese Block
 tile.jar.name=Cracker Jar
