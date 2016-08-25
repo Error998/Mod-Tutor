@@ -105,3 +105,5 @@ http://www.wtfpl.net/ for more details.
 
 [![GIT Badge](https://camo.githubusercontent.com/d6c473eb05b47922742c5a074ac0b87a621ac8f2/687474703a2f2f6369656d626f722e6769746875622e696f2f346269742f696d616765732f6769746875622e706e67) McJty](https://github.com/McJty) for his excellent [github tutorials](http://modwiki.temporal-reality.com/mw/index.php/Main_Page)
 
+
+[![GIT Badge](https://camo.githubusercontent.com/d6c473eb05b47922742c5a074ac0b87a621ac8f2/687474703a2f2f6369656d626f722e6769746875622e696f2f346269742f696d616765732f6769746875622e706e67) TheGreyGhost](https://github.com/TheGreyGhost) for his excellent MinecraftByExample [github tutorials](https://github.com/TheGreyGhost/MinecraftByExample)
