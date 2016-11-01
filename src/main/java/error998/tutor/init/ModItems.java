@@ -9,11 +9,12 @@ import error998.tutor.Reference;
 import error998.tutor.items.ItemCheese;
 import error998.tutor.items.ItemCheeseCracker;
 import error998.tutor.items.ItemCracker;
+import error998.tutor.items.ItemLeadChunk;
 import error998.tutor.items.ItemTomatoSauce;
 
 public class ModItems
 {
-	
+	public static Item lead_chunk;
 	public static Item cheese;
 	public static Item cracker;
 	public static Item cheese_cracker;
@@ -22,6 +23,7 @@ public class ModItems
 	
 	public static void init()
 	{
+		lead_chunk = new ItemLeadChunk();
 		cheese = new ItemCheese();
 		cracker = new ItemCracker();
 		cheese_cracker = new ItemCheeseCracker();
@@ -31,6 +33,7 @@ public class ModItems
 	
 	public static void register()
 	{
+		GameRegistry.register(lead_chunk);
 		GameRegistry.register(cheese);
 		GameRegistry.register(cracker);
 		GameRegistry.register(cheese_cracker);
@@ -40,6 +43,7 @@ public class ModItems
 	
 	public static void registerRenders()
 	{
+		registerRender(lead_chunk);
 		registerRender(cheese);
 		registerRender(cracker);
 		registerRender(cheese_cracker);

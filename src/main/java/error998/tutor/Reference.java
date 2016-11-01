@@ -15,6 +15,7 @@ public class Reference
 	
 	// Declare all items here
 	public static enum TutorItems {
+		LEAD_CHUNK("leadchunk", "ItemLeadChunk"),
 		CHEESE("cheese", "ItemCheese"),
 		CRACKER("cracker", "ItemCracker"),
 		CHEESECRACKER("cheese_cracker", "ItemCheeseCracker"),
@@ -40,6 +41,7 @@ public class Reference
 	
 	// Declare all blocks here
 	public static enum TutorBlocks {
+		LEAD_ORE("leadore", "LeadOre"),
 		BASIC_BLOCK("basicblock", "BlockBasic"),
 		BASIC_MODEL("basicmodel","BlockModel"),
 		CHEESE("cheese", "BlockCheese"),

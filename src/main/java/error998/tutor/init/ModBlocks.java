@@ -5,6 +5,7 @@ import error998.tutor.blocks.BlockCheese;
 import error998.tutor.blocks.BlockCheeseMaker;
 import error998.tutor.blocks.BlockJar;
 import error998.tutor.blocks.BlockModel;
+import error998.tutor.ores.OreLead;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -15,6 +16,8 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModBlocks
 {
+	public static Block lead_Ore;
+	
 	public static Block cheese;
 	public static Block jar;
 	public static Block cheesemaker;
@@ -24,6 +27,8 @@ public class ModBlocks
 	
 	public static void init()
 	{
+		lead_Ore = new OreLead();
+		
 		cheese = new BlockCheese();
 		jar = new BlockJar();
 		cheesemaker = new BlockCheeseMaker();
@@ -34,6 +39,8 @@ public class ModBlocks
 	
 	public static void register()
 	{
+		registerBlock(lead_Ore);
+		
 		registerBlock(cheese);
 		registerBlock(jar);
 		registerBlock(cheesemaker);
@@ -57,6 +64,8 @@ public class ModBlocks
 	
 	public static void registerRenders()
 	{
+		registerRender(lead_Ore);
+		
 		registerRender(cheese);
 		registerRender(jar);
 		registerRender(cheesemaker);
