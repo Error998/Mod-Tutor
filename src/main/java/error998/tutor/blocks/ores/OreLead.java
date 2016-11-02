@@ -1,4 +1,4 @@
-package error998.tutor.ores;
+package error998.tutor.blocks.ores;
 
 import error998.tutor.Reference;
 import error998.tutor.Tutor;

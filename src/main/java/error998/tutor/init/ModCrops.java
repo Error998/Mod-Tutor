@@ -1,51 +1,28 @@
 package error998.tutor.init;
 
-import error998.tutor.blocks.BlockBasic;
-import error998.tutor.blocks.BlockCheese;
-import error998.tutor.blocks.BlockCheeseMaker;
-import error998.tutor.blocks.BlockJar;
-import error998.tutor.blocks.BlockModel;
-import error998.tutor.blocks.ores.OreLead;
+import error998.tutor.blocks.crops.CornPlant;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
-import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class ModBlocks
+public class ModCrops 
 {
-	public static Block lead_Ore;
-	
-	public static Block cheese;
-	public static Block jar;
-	public static Block cheesemaker;
-	public static Block basicblock;
-	public static Block basicmodel;
+	public static Block corn_plant;
 	
 	
 	public static void init()
 	{
-		lead_Ore = new OreLead();
-		
-		cheese = new BlockCheese();
-		jar = new BlockJar();
-		cheesemaker = new BlockCheeseMaker();
-		basicblock = new BlockBasic();
-		basicmodel = new BlockModel();
+		corn_plant = new CornPlant();
 	}
-	
+
 	
 	public static void register()
 	{
-		registerBlock(lead_Ore);
-		
-		registerBlock(cheese);
-		registerBlock(jar);
-		registerBlock(cheesemaker);
-		registerBlock(basicblock);
-		registerBlock(basicmodel);
+		registerBlock(corn_plant);
+	
 	}
 	
 	
@@ -53,24 +30,21 @@ public class ModBlocks
 	{
 		// Register Block
 		GameRegistry.register(block);
-		
+		/*
 		// Create new item of block and register it
 		ItemBlock item = new ItemBlock(block);
 		item.setRegistryName(block.getRegistryName());
 		item.setUnlocalizedName(block.getUnlocalizedName());
 		GameRegistry.register(item);
+		*/
+		
 	}
 	
 	
 	public static void registerRenders()
 	{
-		registerRender(lead_Ore);
+		registerRender(corn_plant);
 		
-		registerRender(cheese);
-		registerRender(jar);
-		registerRender(cheesemaker);
-		registerRender(basicblock);
-		registerRender(basicmodel);
 	}
 	
 	
@@ -81,3 +55,4 @@ public class ModBlocks
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), DEFAULT_ITEM_SUBTYPE, location);		
 	}
 }
+

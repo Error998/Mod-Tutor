@@ -1,6 +1,8 @@
 package error998.tutor.proxy;
 
 import error998.tutor.init.ModBlocks;
+import error998.tutor.init.ModCrops;
+import error998.tutor.init.ModFoods;
 import error998.tutor.init.ModItems;
 import error998.tutor.tileenity.TileEntityJar;
 import error998.tutor.tileenity.render.RendererJar;
@@ -16,6 +18,8 @@ public class ClientProxy implements CommonProxy
 	{
 		ModItems.registerRenders();
 		ModBlocks.registerRenders();
+		ModCrops.registerRenders();
+		ModFoods.registerRenders();
 		
 		// Tile Entity Special Renderer Registration
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityJar.class, new RendererJar());

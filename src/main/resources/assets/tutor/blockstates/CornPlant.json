@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "age=0": { "model": "tutor:cornplant_stage0" },
+        "age=1": { "model": "tutor:cornplant_stage1" },
+        "age=2": { "model": "tutor:cornplant_stage2" },
+        "age=3": { "model": "tutor:cornplant_stage3" }
+    }
+}

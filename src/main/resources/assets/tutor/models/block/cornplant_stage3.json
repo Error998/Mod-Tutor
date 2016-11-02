@@ -1,0 +1,6 @@
+{
+    "parent": "block/crop",
+    "textures": {
+        "crop": "tutor:blocks/corn_stage_3"
+    }
+}

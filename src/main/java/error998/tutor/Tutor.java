@@ -10,6 +10,8 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import error998.tutor.init.ModBlocks;
 import error998.tutor.init.ModCrafting;
+import error998.tutor.init.ModCrops;
+import error998.tutor.init.ModFoods;
 import error998.tutor.init.ModItems;
 import error998.tutor.init.ModTileEntities;
 import error998.tutor.network.PacketHandler;
@@ -37,6 +39,12 @@ public class Tutor
 		
 		ModBlocks.init();
 		ModBlocks.register();
+		
+		ModCrops.init();
+		ModCrops.register();
+		
+		ModFoods.init();
+		ModFoods.register();
 		
 		PacketHandler.init();
 	}
