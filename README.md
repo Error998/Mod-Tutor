@@ -89,7 +89,7 @@ See also the list of [contributors](https://github.com/Error998/Mod-Tutor/graphs
 
 ## License
 
-Copyright © 2016 Error_998 <support@saminecraft.co.za>  
+Copyright © 2016 Error_998 
 
 This work is free. You can redistribute it and/or modify it under the
 terms of the Do What The Fuck You Want To Public License, Version 2,
@@ -99,7 +99,10 @@ See the [LICENSE.md](LICENSE.md) file or visit
 http://www.wtfpl.net/ for more details.
 
 ## Acknowledgments
+[![GIT Badge](https://camo.githubusercontent.com/d6c473eb05b47922742c5a074ac0b87a621ac8f2/687474703a2f2f6369656d626f722e6769746875622e696f2f346269742f696d616765732f6769746875622e706e67)
+DiscultGA] for his excellent video [mod tutorials](https://www.youtube.com/playlist?list=PLkhfw1xGCrIPpgIGXuhFmkjPK5427q4e6)
 
+ 
 [![GIT Badge](https://camo.githubusercontent.com/d6c473eb05b47922742c5a074ac0b87a621ac8f2/687474703a2f2f6369656d626f722e6769746875622e696f2f346269742f696d616765732f6769746875622e706e67) MrCrayfish](https://github.com/MrCrayfish) for his excellent video [mod tutorials](https://mrcrayfish.com/)  
 
 
